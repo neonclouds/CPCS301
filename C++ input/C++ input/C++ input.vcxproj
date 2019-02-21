@@ -23,6 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="data.txt" />
+    <Text Include="test.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F226E1E0-9642-487B-8987-E002EDC4492E}</ProjectGuid>

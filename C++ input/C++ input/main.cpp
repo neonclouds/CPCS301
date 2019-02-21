@@ -10,6 +10,12 @@ Visual Studio 2015
 
 using namespace std;
 
+//void NewCopy(string file, string a, float b)
+//{
+//	ofstream outData(file);
+//	outData << a << b << endl;
+//
+//}
 
 float deposit(string person, string a, float balance, float deposit)
 {
@@ -35,6 +41,7 @@ struct PERSON {
 int main()
 {
 	ifstream inData;
+	ofstream outData;
 	inData.open("data.txt");
 	bool loop = true;
 	string firstName;
@@ -126,5 +133,12 @@ int main()
 
 	} while (loop);
 
+	outData.open("test.txt");
+	for (int i = 0; i < 6; i++)
+	{
+		outData << people[i].Name << "  " << people[i].Balance << endl;
+	}
+
+	inData.close();
 	return 0;
 }
