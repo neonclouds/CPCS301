@@ -133,7 +133,7 @@ int main()
 
 	} while (loop);
 
-	outData.open("test.txt");
+	outData.open("newData.txt");
 	for (int i = 0; i < 6; i++)
 	{
 		outData << people[i].Name << "  " << people[i].Balance << endl;
