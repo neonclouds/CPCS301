@@ -63,41 +63,40 @@ string Person::fullName()
 	return firstName + " " + lastName;
 }
 
-void readData(string text, Person people[], int n)
+int readData(string text, Person people[])
 {
 	ifstream inData;
 	inData.open(text);
 	string firstName;
 	string lastName;
+	string line;
 	float hoursWorked;
 	float payRate;
-	for (int i = 0; i < n; i++)
+	char newLine;
+	int n = 0;
+	for (int i = 0; i < 19; i++)
 	{
-		inData >> firstName >> lastName >> hoursWorked>> payRate;
+		
+		inData >> firstName >> lastName >> hoursWorked >> payRate;
+
 
 		people[i].setFirstName(firstName);
 		people[i].setLastName(lastName);
 		people[i].setHoursWorked(hoursWorked);
 		people[i].setPayRate(payRate);
 
+		if (inData.eof())
+		{
+			n = i;
+			i = 19;
+		}
+
+
 	}
 
 	inData.close();
-
-}
-
-int amountOfEmployees(string text)
-{
-	ifstream countLines;
-	countLines.open(text);
-	int n = 0;
-	string line;
-
-	while (getline(countLines, line))
-	{
-		n++;
-	}
 	return n;
+
 }
 
 void writeData(string text, Person people[], int n)
@@ -107,6 +106,7 @@ void writeData(string text, Person people[], int n)
 	for (int i = 0; i < n; i++)
 	{
 		outData << people[i].fullName() << "  " << people[i].totalPay() << endl;
+
 	}
 	outData.close();
 }
@@ -114,8 +114,8 @@ void writeData(string text, Person people[], int n)
 int main()
 {
 	Person people[19];
-	int numberOfEmployees = amountOfEmployees("input.txt");
-	readData("input.txt", people, numberOfEmployees);
+	int numberOfEmployees = readData("input.txt", people);
+	readData("input.txt", people);
 	writeData("output.txt", people, numberOfEmployees);
 	return 0;
 }
