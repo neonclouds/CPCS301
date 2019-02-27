@@ -74,7 +74,7 @@ int readData(string text, Person people[])
 	float payRate;
 	char newLine;
 	int n = 0;
-	for (int i = 0; i < 19; i++)
+	for (int i = 0; i < 20; i++)
 	{
 		
 		inData >> firstName >> lastName >> hoursWorked >> payRate;
@@ -90,7 +90,6 @@ int readData(string text, Person people[])
 			n = i;
 			i = 19;
 		}
-
 
 	}
 
