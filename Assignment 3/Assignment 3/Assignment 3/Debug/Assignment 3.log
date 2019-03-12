@@ -1,0 +1,9 @@
+﻿  pay.cpp
+c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\person.cpp(86): warning C4101: 'newLine': unreferenced local variable
+  person.cpp
+c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\person.cpp(86): warning C4101: 'newLine': unreferenced local variable
+  Generating Code...
+c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\person.cpp(70): error C4716: 'Person::totalPay': must return a value
+c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\person.cpp(75): error C4716: 'Person::fullName': must return a value
+c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\person.cpp(75): error C4716: 'Person::fullName': must return a value
+c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\person.cpp(70): error C4716: 'Person::totalPay': must return a value
