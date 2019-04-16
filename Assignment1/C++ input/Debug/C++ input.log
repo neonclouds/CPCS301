@@ -1,0 +1,4 @@
+﻿  balance.cpp
+c:\users\lebra\desktop\assignment 4\cpcs301\c++ input\c++ input\balance.cpp(49): warning C4101: 'balance': unreferenced local variable
+c:\users\lebra\desktop\assignment 4\cpcs301\c++ input\c++ input\balance.cpp(27): warning C4715: 'deposit': not all control paths return a value
+  C++ input.vcxproj -> C:\Users\lebra\Desktop\Assignment 4\CPCS301\C++ input\Debug\C++ input.exe
