@@ -2,7 +2,11 @@
 #ifndef PERSON_H
 #define PERSON_H
 
+#include <fstream>
+#include <iostream>
 #include <string>
+#include <vector>
+
 using namespace std;
 
 class Person
@@ -33,4 +37,3 @@ public:
 	string fullName();
 };
 #endif // end person.h
-#pragma once

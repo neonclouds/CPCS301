@@ -1,8 +1,14 @@
 #include "person.h"
-#include <fstream>
-#include <vector>
 
-
+Person::Person() 
+{
+	firstName = " ";
+	lastName = " ";
+	employeeID = 0;
+	companyName = " ";
+	hoursWorked = 0.0;
+	payRate = 0.0;
+}
 
 void Person::setFirstName(string fName)
 {
@@ -66,33 +72,10 @@ float Person::getHoursWorked()
 
 float Person::totalPay()
 {
-
+	return payRate * hoursWorked;
 }
 
 string Person::fullName()
 {
-
-}
-
-void readData(string text, vector<Person>* employees)
-{
-	ifstream inData;
-	inData.open(text);
-	string firstName;
-	string lastName;
-	string line;
-	float hoursWorked;
-	float payRate;
-	char newLine;
-	int n = 0;
-	Person p;
-
-	while (inData >> firstName >> lastName >> hoursWorked >> payRate)
-	{
-		p.setFirstName(firstName);
-
-	}
-
-	inData.close();
-
+	return firstName + " " + lastName;
 }

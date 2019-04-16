@@ -1,3 +1,9 @@
+/*
+Author: Brandon Le
+Project: Assignment 2
+Date: 2/26/19
+*/
+
 #include "person.h"
 #include <iostream>
 #include <fstream>

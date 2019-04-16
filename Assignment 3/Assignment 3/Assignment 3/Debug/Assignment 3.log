@@ -1,9 +1,9 @@
 ﻿  pay.cpp
-c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\person.cpp(86): warning C4101: 'newLine': unreferenced local variable
-  person.cpp
-c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\person.cpp(86): warning C4101: 'newLine': unreferenced local variable
-  Generating Code...
-c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\person.cpp(70): error C4716: 'Person::totalPay': must return a value
-c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\person.cpp(75): error C4716: 'Person::fullName': must return a value
-c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\person.cpp(75): error C4716: 'Person::fullName': must return a value
-c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\person.cpp(70): error C4716: 'Person::totalPay': must return a value
+c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\pay.cpp(40): warning C4018: '<': signed/unsigned mismatch
+c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\pay.cpp(62): warning C4018: '<': signed/unsigned mismatch
+c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\pay.cpp(74): warning C4018: '<': signed/unsigned mismatch
+c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\pay.cpp(90): warning C4018: '<': signed/unsigned mismatch
+c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\pay.cpp(106): warning C4018: '<': signed/unsigned mismatch
+c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\pay.cpp(122): warning C4018: '<': signed/unsigned mismatch
+c:\users\lebra\desktop\cpcs301\assignment 3\assignment 3\assignment 3\pay.cpp(138): warning C4018: '<': signed/unsigned mismatch
+  Assignment 3.vcxproj -> C:\Users\lebra\Desktop\CPCS301\Assignment 3\Assignment 3\Debug\Assignment 3.exe

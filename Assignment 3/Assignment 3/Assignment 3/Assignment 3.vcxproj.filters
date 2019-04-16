@@ -18,6 +18,21 @@
     <Text Include="input.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="Boeing.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Intel.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Douglas.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Raytheon.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="HealthTech.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="person.h">
@@ -26,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="person.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pay.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

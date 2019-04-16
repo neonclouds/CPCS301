@@ -115,7 +115,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Text Include="Boeing.txt" />
+    <Text Include="Douglas.txt" />
+    <Text Include="HealthTech.txt" />
     <Text Include="input.txt" />
+    <Text Include="Intel.txt" />
+    <Text Include="Raytheon.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="person.h" />
