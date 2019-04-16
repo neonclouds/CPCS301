@@ -1,3 +1,8 @@
+/*
+Author: Brandon Le
+Project: Assignment 3
+Date: 3/7/19
+*/
 #include "person.h"
 
 Person::Person() 

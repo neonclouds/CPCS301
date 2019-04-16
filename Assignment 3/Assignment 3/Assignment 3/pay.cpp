@@ -1,3 +1,9 @@
+/*
+Author: Brandon Le
+Project: Assignment 3
+Date: 3/7/19
+*/
+
 #include "person.h"
 
 void readData(string text, vector<Person>* employees)

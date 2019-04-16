@@ -1,4 +1,9 @@
-//begin person.h
+/*
+Author: Brandon Le
+Project: Assignment 3
+Date: 3/7/19
+*/
+
 #ifndef PERSON_H
 #define PERSON_H
 
