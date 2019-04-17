@@ -3,124 +3,50 @@ Author: Brandon Le
 Project: Assignment 2
 Date: 2/26/19
 */
-
 #include "person.h"
 #include <iostream>
+#include <string>
 #include <fstream>
-#include <ostream>
+#include <vector>
 
 using namespace std;
 
-Person::Person()
-{
-	string lastName = " ";
-	string firstName = " ";
-	float  payRate = 0;
-	float  hoursWorked = 0;
-}
-
-string Person::getFirstName() {
-
-	return firstName;
-}
-
-string Person::getLastName()
-{
-	return lastName;
-}
-
-float Person::getHoursWorked()
-{
-	return hoursWorked;
-}
-
-float Person::getPayRate()
-{
-	return payRate;
-}
-
-void Person::setFirstName(string fName)
-{
-	firstName = fName;
-}
-
-void Person::setLastName(string lName)
-{
-	lastName = lName;
-}
-
-void Person::setHoursWorked(float hours)
-{
-	hoursWorked = hours;
-}
-
-void Person::setPayRate(float pay)
-{
-	payRate = pay;
-}
-
-float Person::totalPay()
-{
-	return payRate * hoursWorked;
-}
-
-string Person::fullName()
-{
-	return firstName + " " + lastName;
-}
-
-int readData(string text, Person people[])
+void readData(string text, vector <Person> &p)
 {
 	ifstream inData;
 	inData.open(text);
-	string firstName;
-	string lastName;
-	string line;
-	float hoursWorked;
-	float payRate;
-	char newLine;
-	int n = 0;
-	for (int i = 0; i < 20; i++)
+	string firstname;
+	string lastname;
+	float hoursworked;
+	float payrate;
+
+	while (inData >> firstname >> lastname >> hoursworked >> payrate)
 	{
-		
-		inData >> firstName >> lastName >> hoursWorked >> payRate;
-
-
-		people[i].setFirstName(firstName);
-		people[i].setLastName(lastName);
-		people[i].setHoursWorked(hoursWorked);
-		people[i].setPayRate(payRate);
-
-		if (inData.eof())
-		{
-			n = i;
-			i = 19;
-		}
-
+		p.emplace_back(firstname, lastname, hoursworked, payrate);
 	}
 
 	inData.close();
-	return n;
 
 }
 
-void writeData(string text, Person people[], int n)
+void writeData(string text, vector <Person> &p)
 {
 	ofstream outData;
 	outData.open(text);
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < p.size(); i++)
 	{
-		outData << people[i].fullName() << "  " << people[i].totalPay() << endl;
+		outData << p.at(i).fullName() << "  " << p.at(i).totalPay() << endl;
 
 	}
 	outData.close();
+
 }
+
 
 int main()
 {
-	Person people[19];
-	int numberOfEmployees = readData("input.txt", people);
-	readData("input.txt", people);
-	writeData("output.txt", people, numberOfEmployees);
+	vector <Person> person;
+	readData("input.txt", person);
+	writeData("output.txt", person);
 	return 0;
 }

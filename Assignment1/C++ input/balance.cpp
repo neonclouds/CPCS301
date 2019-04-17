@@ -11,14 +11,14 @@ Visual Studio 2017
 using namespace std;
 
 
-float deposit(string person, string a, float balance, float deposit)
-{
-
-	if (person == a)
-	{
-		return balance + deposit;
-	}
-}
+//float deposit(string person, string a, float balance, float deposit)
+//{
+//
+//	if (person == a)
+//	{
+//		return balance + deposit;
+//	}
+//}
 
 
 void display(string a, float balance)
@@ -49,7 +49,6 @@ PERSON * readData(int &N)
 		inData >> firstName >> lastName >> P[i].Balance;
 		fullName = firstName + ' ' + lastName;
 		strcpy_s(P[i].Name, fullName.c_str());
-		cout << firstName << P[i].Balance << endl;
 		i++;
 	}
 
@@ -57,11 +56,24 @@ PERSON * readData(int &N)
 	return P;
 }
 
+void deposit(PERSON* P, int N, string custName, float amount)
+{
+	for (int i = 0; i < N; i++)
+	{
+		if (custName == P[i].Name)
+		{
+			P[i].Balance = P[i].Balance + amount;
+		}
+	}
+}
+
 int main()
 {
+	ifstream inData;
+	inData.open("data.txt");
 	ofstream outData;
 	bool loop = true;
-	int size = 6;
+	int size = -1;
 	float balance = 0;
 	float richestBalance = 0;
 	string richestPerson;
@@ -69,6 +81,14 @@ int main()
 	float depositAmount;
 	float tempBalance = 0;
 	int input;
+
+	while (!inData.eof())
+	{
+		string line;
+		getline(inData, line);
+		size++;
+	}
+
 	PERSON* p = new PERSON[size];
 	p = readData(size);
 
@@ -91,7 +111,7 @@ int main()
 		}
 		if (input == 2)
 		{
-			for (int i = 0; i < 6; i++)
+			for (int i = 0; i < size; i++)
 			{
 				tempBalance = p[i].Balance;
 				if (tempBalance > richestBalance)
@@ -111,12 +131,16 @@ int main()
 			cout << endl << personDeposit << ", how much would you like to deposit?";
 			cin >> depositAmount;
 
+
+			deposit(p, size, personDeposit, depositAmount);
+
 			int count = 0;
 			for (int i = 0; i < size; i++)
 			{
 				if (personDeposit == p[i].Name)
 				{
-					p[i].Balance = deposit(personDeposit, p[i].Name, p[i].Balance, depositAmount);
+
+					deposit(p, size, personDeposit, depositAmount);
 					cout << "Now your new balance is ";
 					cout << p[i].Balance << endl << endl;
 				}

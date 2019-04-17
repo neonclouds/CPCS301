@@ -1,0 +1,20 @@
+﻿  book.cpp
+  checkout.cpp
+c:\users\lebra\desktop\assignment 4\cpcs301\assignment5\assignment5\checkout.cpp(106): warning C4018: '<': signed/unsigned mismatch
+c:\users\lebra\desktop\assignment 4\cpcs301\assignment5\assignment5\checkout.cpp(121): warning C4018: '<': signed/unsigned mismatch
+c:\users\lebra\desktop\assignment 4\cpcs301\assignment5\assignment5\checkout.cpp(97): warning C4101: 'tempcardid': unreferenced local variable
+  person.cpp
+  Generating Code...
+checkout.obj : error LNK2005: "public: __thiscall book::book(int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0book@@QAE@HV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00@Z) already defined in book.obj
+checkout.obj : error LNK2005: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall book::getauthor(void)" (?getauthor@book@@QAE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) already defined in book.obj
+checkout.obj : error LNK2005: "public: int __thiscall book::getbookid(void)" (?getbookid@book@@QAEHXZ) already defined in book.obj
+checkout.obj : error LNK2005: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall book::getcategory(void)" (?getcategory@book@@QAE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) already defined in book.obj
+checkout.obj : error LNK2005: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall book::gettitle(void)" (?gettitle@book@@QAE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) already defined in book.obj
+person.obj : error LNK2005: "public: __thiscall person::person(int,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0person@@QAE@H_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1@Z) already defined in checkout.obj
+person.obj : error LNK2005: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall person::fullname(void)" (?fullname@person@@QAE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) already defined in checkout.obj
+person.obj : error LNK2005: "public: bool __thiscall person::getactive(void)" (?getactive@person@@QAE_NXZ) already defined in checkout.obj
+person.obj : error LNK2005: "public: int __thiscall person::getcardid(void)" (?getcardid@person@@QAEHXZ) already defined in checkout.obj
+person.obj : error LNK2005: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall person::getfirstname(void)" (?getfirstname@person@@QAE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) already defined in checkout.obj
+person.obj : error LNK2005: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall person::getlastname(void)" (?getlastname@person@@QAE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) already defined in checkout.obj
+person.obj : error LNK2005: "public: void __thiscall person::setactive(bool)" (?setactive@person@@QAEX_N@Z) already defined in checkout.obj
+C:\Users\lebra\Desktop\Assignment 4\CPCS301\Assignment5\Debug\Assignment5.exe : fatal error LNK1169: one or more multiply defined symbols found
