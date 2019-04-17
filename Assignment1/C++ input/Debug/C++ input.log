@@ -1,3 +1,3 @@
 ﻿  balance.cpp
-c:\users\lebra\desktop\assignment 4\cpcs301\assignment1\c++ input\balance.cpp(43): warning C4101: 'balance': unreferenced local variable
+c:\users\lebra\desktop\assignment 4\cpcs301\assignment1\c++ input\balance.cpp(35): warning C4101: 'balance': unreferenced local variable
   C++ input.vcxproj -> C:\Users\lebra\Desktop\Assignment 4\CPCS301\Assignment1\Debug\C++ input.exe

@@ -11,14 +11,6 @@ Visual Studio 2017
 using namespace std;
 
 
-//float deposit(string person, string a, float balance, float deposit)
-//{
-//
-//	if (person == a)
-//	{
-//		return balance + deposit;
-//	}
-//}
 
 
 void display(string a, float balance)
